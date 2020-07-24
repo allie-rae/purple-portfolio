@@ -39,4 +39,8 @@ header {
     button {
         font-size: 2rem;
     }
+
+    header {
+        justify-content: center;
+    }
 }
