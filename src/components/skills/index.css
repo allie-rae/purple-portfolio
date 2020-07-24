@@ -1,0 +1,35 @@
+.skills-container {
+    font-family: 'Nunito';
+    width: 70%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    max-width: 1200px;
+}
+
+.skill {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #011750;
+    color: white;
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin: 3px;
+}
+
+.skill:hover {
+    background-color: #54B4FF;
+    transition-duration: 0.3s;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 500px) {
+    .skill {
+        font-size: 2rem;
+    }
+}

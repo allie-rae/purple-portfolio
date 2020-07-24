@@ -1,0 +1,42 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.7rem;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button:hover {
+    transition-duration: 0.3s;
+    background-color: rgba(255,255,255,0.1);
+}
+
+header {
+    background-color: #011750;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    button {
+        font-size: 2rem;
+    }
+}
