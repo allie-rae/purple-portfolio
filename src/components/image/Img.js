@@ -1,13 +1,14 @@
 import React from 'react';
 import './index.css';
 
-const Img = () => {
+const Img = (props) => {
     return (
-        <div className="img-container">
+        <div className="img-container" ref={props.aboutRef}>
         <div className="big-img"></div>
         <div className="img-txt">
             <h1>Allie Robinson</h1>
             <h2>Full Stack Software Developer</h2>
+            <h3 className="location-h3">Hoffman Estates, Illinois</h3>
             <p className="quote">"Not all those who wander are lost."</p>
             <p className="author">-- J.R.R. Tolkien</p>
             <p className="about-txt">
@@ -17,7 +18,7 @@ const Img = () => {
                 I have a Bachelor of Science in General Biology from Washington State University and have studied full stack web development intensively at Lambda School for over a year.
             </p>
             <p className="about-txt">
-                I am currently on the market and I'm looking for a company with a laid back, friendly culture that makes aesthetically pleasing, optimized apps. I want to learn and grow and become the best developer I can be.
+                I'm currently looking for a company with an open, friendly culture that makes aesthetically pleasing, optimized apps. Check out my <a href="https://resume.creddle.io/resume/85r6ww8x3i3" target="_blank">resume</a>, <a href="https://github.com/allie-rae" target="_blank">github</a>, and <a href="https://www.linkedin.com/in/allie-robinson/" target="_blank">linkedin</a> if you'd like to learn more about me.
             </p>
         </div>
         </div>

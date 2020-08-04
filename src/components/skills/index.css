@@ -1,8 +1,7 @@
 .skills-container {
     font-family: 'Nunito';
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
-    /* border: 1px solid red; */
     max-width: 1200px;
 }
 
@@ -15,6 +14,7 @@
     font-weight: 400;
     font-size: 1.6rem;
     margin: 3px;
+    transition-duration: 0.3s;
 }
 
 .skill:hover {

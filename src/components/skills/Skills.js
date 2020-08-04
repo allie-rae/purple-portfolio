@@ -5,7 +5,7 @@ import './index.css';
 const Skills = () => {
     return (
         <div className="skills-container">
-        <h3>Skills:</h3>
+        <h3>Skills</h3>
             <div className="skill">React</div>
             <div className="skill">Redux</div>
             <div className="skill">Node</div>
@@ -25,6 +25,7 @@ const Skills = () => {
             <div className="skill">Client-side Routing</div>
             <div className="skill">Authentication</div>
             <div className="skill">JSON Web Tokens</div>
+            <div className="skill">TypeScript</div>
             </div>
     )
 }
