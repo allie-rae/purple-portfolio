@@ -17,6 +17,13 @@
     transition-duration: 0.3s;
 }
 
+.skill a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
 .skill:hover {
     background-color: #54B4FF;
     transition-duration: 0.3s;

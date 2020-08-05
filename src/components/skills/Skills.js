@@ -1,32 +1,44 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './index.css';
 
 
 const Skills = () => {
+
+    const [skills, setSkills] = useState([
+        ['React', 'https://reactjs.org/docs/getting-started.html'], 
+        ['Redux', 'https://redux.js.org/'], 
+        ['Node', 'https://nodejs.org/en/about/'], 
+        ['Express', 'https://expressjs.com/'], 
+        ['JavaScript', 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'], 
+        ['HTML', 'https://developer.mozilla.org/en-US/docs/Web/HTML'], 
+        ['CSS', 'https://developer.mozilla.org/en-US/docs/Web/CSS'], 
+        ['Responsive Design', 'https://en.wikipedia.org/wiki/Responsive_web_design'], 
+        ['Context API', 'https://reactjs.org/docs/context.html'], 
+        ['SQL', 'https://www.postgresql.org/docs/9.3/sql.html'], 
+        ['Axios', 'https://www.npmjs.com/package/axios'], 
+        ['Formik', 'https://formik.org/docs/overview'], 
+        ['Yup', 'https://github.com/jquense/yup'], 
+        ['Bootstrap', 'https://getbootstrap.com/'], 
+        ['Reactstrap', 'https://reactstrap.github.io/'], 
+        ['Styled-Componenets', 'https://styled-components.com/'], 
+        ['Client-Side Routing', 'https://reactrouter.com/web/guides/quick-start'], 
+        ['JSON Web Tokens', 'https://jwt.io/'], 
+        ['TypeScript', 'https://www.typescriptlang.org/docs/'],
+        ['Relational Database Design', 'https://www3.ntu.edu.sg/home/ehchua/programming/sql/Relational_Database_Design.html'],
+        ['Postman', 'https://www.postman.com/'],
+        ['Insomnia', 'https://insomnia.rest/'],
+        ['Docker', 'https://www.docker.com/'],
+        ['Python', 'https://docs.python.org/3/'],
+        ['Material UI', 'https://material-ui.com/']
+    ])
+
     return (
         <div className="skills-container">
         <h3>Skills</h3>
-            <div className="skill">React</div>
-            <div className="skill">Redux</div>
-            <div className="skill">Node</div>
-            <div className="skill">Express</div>
-            <div className="skill">JavaScript</div>
-            <div className="skill">HTML</div>
-            <div className="skill">CSS</div>
-            <div className="skill">Responsive Design</div>
-            <div className="skill">Context API</div>
-            <div className="skill">SQL</div>
-            <div className="skill">Axios</div>
-            <div className="skill">Formik</div>
-            <div className="skill">Yup</div>
-            <div className="skill">Bootstrap</div>
-            <div className="skill">Reactstrap</div>
-            <div className="skill">Styled-Components</div>
-            <div className="skill">Client-side Routing</div>
-            <div className="skill">Authentication</div>
-            <div className="skill">JSON Web Tokens</div>
-            <div className="skill">TypeScript</div>
-            </div>
+        {skills.map(skill => {
+            return <a href={skill[1]} target="_blank"><div className="skill">{skill[0]}</div></a>
+        })}
+        </div>
     )
 }
 

@@ -15,7 +15,7 @@ const Img = (props) => {
                 I'm an enthusiastic person with a love for creativity and beautiful design. I not only want to make apps that function, I want to make them look gorgeous doing it.
             </p>
             <p className="about-txt">
-                I have a Bachelor of Science in General Biology from Washington State University and have studied full stack web development intensively at Lambda School for over a year.
+                I have a Bachelor of Science in General Biology from <a href="wsu.edu" target="_blank">Washington State University</a> and have studied full stack web development intensively at <a href="lambdaschool.com" target="_blank">Lambda School</a> for over a year.
             </p>
             <p className="about-txt">
                 I'm currently looking for a company with an open, friendly culture that makes aesthetically pleasing, optimized apps. Check out my <a href="https://resume.creddle.io/resume/85r6ww8x3i3" target="_blank">resume</a>, <a href="https://github.com/allie-rae" target="_blank">github</a>, and <a href="https://www.linkedin.com/in/allie-robinson/" target="_blank">linkedin</a> if you'd like to learn more about me.
