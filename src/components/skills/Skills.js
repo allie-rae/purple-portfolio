@@ -15,6 +15,7 @@ const Skills = () => {
         ['Responsive Design', 'https://en.wikipedia.org/wiki/Responsive_web_design'], 
         ['Context API', 'https://reactjs.org/docs/context.html'], 
         ['SQL', 'https://www.postgresql.org/docs/9.3/sql.html'], 
+        ['Knex', 'http://knexjs.org/'],
         ['Axios', 'https://www.npmjs.com/package/axios'], 
         ['Formik', 'https://formik.org/docs/overview'], 
         ['Yup', 'https://github.com/jquense/yup'], 
