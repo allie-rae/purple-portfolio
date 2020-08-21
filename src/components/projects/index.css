@@ -48,11 +48,17 @@ li {
     font-size: 1.9rem;
 }
 
-h3 {
+.project-p-creds {
+    font-family: 'Nunito';
+    font-size: 1.9rem;
+    margin-top: 0;
+}
+
+h4 {
     font-family: 'Nunito';
     font-size: 3rem;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 @media(max-width: 640px) {

@@ -8,6 +8,7 @@ const Projects = (props) => {
     const [projects, setProjects] = useState([
         {
             name: 'Curio',
+            credentials: ['testing', '123456789'],
             githubLink: 'https://github.com/curio-app',
             deployedLink: 'https://curio-app.netlify.com/',
             skills: ['React', 'Styled-Components', 'JavaScript'],
@@ -15,7 +16,17 @@ const Projects = (props) => {
             screenshot: curioScreenshot
         },
         {
+            name: 'Story Squad',
+            credentials: ['testing@gmail.com', '123456789'],
+            githubLink: 'https://github.com/Lambda-School-Labs/story-squad-fe',
+            deployedLink: 'https://master.d37ier1k83jxk6.amplifyapp.com/',
+            skills: ['React', 'TypeScript', 'Material UI'],
+            comments: 'Story Squad is a game that encourages children to read, write, and draw through competition with peers.',
+            screenshot: storySquadScreenshot
+        },
+        {
             name: 'Jon\'s Carpentry',
+            credentials: '',
             githubLink: 'https://github.com/allie-rae/jons-construction-website',
             deployedLink: 'https://construction-remake.now.sh/',
             skills: ['React', 'CSS', 'JavaScript', 'Responsive Design'],
@@ -29,14 +40,6 @@ const Projects = (props) => {
         //     comments: 'I built both the font end and the back end of this song suggester app.',
         //     screenshot: ''
         // },
-        {
-            name: 'Story Squad',
-            githubLink: 'https://github.com/Lambda-School-Labs/story-squad-fe',
-            deployedLink: 'https://master.d37ier1k83jxk6.amplifyapp.com/',
-            skills: ['React', 'TypeScript', 'Material UI'],
-            comments: 'Story Squad is a game that encourages children to read, write, and draw through competition with peers.',
-            screenshot: storySquadScreenshot
-        },
     ])
      
     console.log(projects)
@@ -47,9 +50,14 @@ const Projects = (props) => {
         {projects.map(project => {
             return (
                 <div className="project-card-wrapper">
-                    <div className="project-card-img" style={{ backgroundImage:`url(${project.screenshot})`}}></div>
+                    <a href={project.deployedLink}>
+                        <div className="project-card-img" style={{ backgroundImage:`url(${project.screenshot})`}}></div>
+                    </a>
                     <div classname="project-card-txt">
-                        <h4 className="project-card-h4">{project.name}</h4>
+                        <a className="project-link" href={project.deployedLink}>
+                            <h4 className="project-card-h4">{project.name}</h4>
+                        </a>
+                            <p className="project-p-creds">{project.credentials ? <div><p className="project-p-creds">Username: {project.credentials[0]} <br /> Password: {project.credentials[1]}</p></div> : ""}</p>
                             <ul>
                                 {project.skills.map(skill => {
                                 return (<li>{skill}</li>)})
