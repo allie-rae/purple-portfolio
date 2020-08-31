@@ -37,7 +37,7 @@ const Skills = () => {
         <div className="skills-container">
         <h3>Skills</h3>
         {skills.map(skill => {
-            return <a href={skill[1]} target="_blank"><div className="skill">{skill[0]}</div></a>
+            return <a href={skill[1]} target="_blank" key={skill[0]}><div className="skill" key={skill[0]}>{skill[0]}</div></a>
         })}
         </div>
     )

@@ -41,15 +41,13 @@ const Projects = (props) => {
         //     screenshot: ''
         // },
     ])
-     
-    console.log(projects)
 
     return (<div className="projects-header-wrapper" ref={props.projectsRef}>
     <h3>Projects</h3>
     <div className="projects-wrapper">
         {projects.map(project => {
             return (
-                <div className="project-card-wrapper">
+                <div className="project-card-wrapper" key={project.name}>
                     <a href={project.deployedLink}>
                         <div className="project-card-img" style={{ backgroundImage:`url(${project.screenshot})`}}></div>
                     </a>
